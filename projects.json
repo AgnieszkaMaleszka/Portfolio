@@ -8,7 +8,7 @@
                       "Obsługa sieci - BSD socket API", 
                       "Kod klienta - QT"],
       "image": "/photos/Wisielec",
-      "link": "https://github.com/dataproctech/pierwszy-projekt-AgnieszkaMaleszka"
+      "link": "https://github.com/AgnieszkaMaleszka/Wisielec"
     },
     {
       "name": "Szachy",
@@ -27,7 +27,7 @@
             "Wczytywanie modeli z Blender - Assimp"
           ],
           "image": "/photos/Akwarium",
-          "video": "/photos/wideo/Akwarium.mp4"
+          "video": "pXaO3P97Lu4"
         },
         {
           "name": "Gimp",
@@ -48,7 +48,7 @@
             "Mikroprocesor - Atmega328P"
           ],
           "image": "/photos/Robot ASK",
-          "video": "/photos/wideo/robot2.mp4"
+          "video": "XzO_iJRgABQ"
         }, 
         {
           "name": "Pong",
@@ -60,8 +60,9 @@
               "Logika gry - Python"
           ],
           "image": "/photos/Pong",
-          "video": "/photos/wideo/z7_155941.mp4"
-        }, 
+          "link": "https://github.com/AgnieszkaMaleszka/Arduino-Pong",
+          "video": "9t2A97gM4uw"
+        },
         {
           "name": "SkryptyBash",
           "title": "Skrypty w bashu",
@@ -79,6 +80,7 @@
              "System regułowy - CLIPS",
              "Interfejs użytkownika - Python"
           ],
+          "link": "https://github.com/AgnieszkaMaleszka/Gift-guide",
           "image": "/photos/PDDL"
         },
         {
