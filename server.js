@@ -7,6 +7,7 @@ const PORT = 3000;
 
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/photos', express.static(path.join(__dirname, 'public', 'photos')));
+app.use('/static', express.static(path.join(__dirname, 'static')));
 
 // Funkcja wczytująca projekty z JSON-a
 function loadProjects(file) {
