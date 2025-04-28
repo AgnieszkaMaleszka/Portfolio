@@ -1,0 +1,96 @@
+{
+  "projects": [
+    {
+      "name": "Wisielec",
+      "title": "Wisielec",
+      "description": "Gra sieciowa, w której gracze odgadują hasła w systemie turowym. Dołączają do wspólnego pokoju, zdobywają punkty za poprawne litery, a najszybsi otrzymują premię. Nowi gracze mogą dołączać w trakcie rozgrywki, ale gra rozpoczyna się przy co najmniej dwóch osobach. Każda tura ma limit czasu, a kategoria hasła jest podana na początku." ,
+      "technology": ["Program serwera - C++",
+                      "Obsługa sieci - BSD socket API", 
+                      "Kod klienta - QT"],
+      "image": "/photos/Wisielec",
+      "link": "https://github.com/dataproctech/pierwszy-projekt-AgnieszkaMaleszka"
+    },
+    {
+      "name": "Szachy",
+      "title": "Szachy",
+      "description": "Gra umożliwiająca rozgrywkę w szachy dla dwóch graczy. Obsługuje ruchy zgodne z zasadami FIDE, wykrywa szach, mat i pat. Posiada interfejs umożliwiający intuicyjne poruszanie figurami oraz analizę pozycji.",
+      "technology":["Kod programu - C++",
+                    "Interfejs użytkownika - SFML "],
+      "image": "/photos/Szachy"
+    }, 
+        {
+          "name": "Akwarium",
+          "title": "Akwarium",
+          "description": "Animacja 3D symulująca pływanie rybek w akwarium. Ruchome elementy to trawa oraz pływające obiekty. Samodzielnie wykonane shadery. Sterowanie kamerą za pomocą strzałek oraz myszki, przybliżanie za pomocą kółka w myszce. Obiekty z cieniowaniem oraz dwa źródła światła. Dywan wykonany przy użyciu tekstury sierści.",
+          "technology": [
+            "API do tworzenia grafiki - OpenGL",
+            "Wczytywanie modeli z Blender - Assimp"
+          ],
+          "image": "/photos/Akwarium",
+          "video": "/photos/wideo/Akwarium.mp4"
+        },
+        {
+          "name": "Gimp",
+          "title": "Projekty graficzne",
+          "description": "Plakaty i dyplomy zaprojektowane na szkolny turniej układania kostki Rubika.",
+          "technology": [
+            "Edytor grafiki - GIMP"
+          ],
+          "image": "/photos/Gimp"
+        },
+        {
+          "name": "Robot ASK",
+          "title": "Robot omijający przeszkody",
+          "description": "Własnoręcznie zaprojektowany i wykonany robot do omijania przeszkód. Z samodzielnie wytrawioną płytką PCB. Robot używa czujnika ultradźwiękowego do wykrywania przeszkód. Kiedy zbliży się do przeszkody, obraca się i sprawdza, czy może kontynuować jazdę. Jeśli droga jest zablokowana, cofa się o określoną odległość i ponownie sprawdza wolne miejsce.",
+          "technology": [
+            "Schemat połączeń - EAGLE",
+            "Kod Atmegi - Arduino IDE",
+            "Mikroprocesor - Atmega328P"
+          ],
+          "image": "/photos/Robot ASK",
+          "video": "/photos/wideo/robot2.mp4"
+        }, 
+        {
+          "name": "Pong",
+          "title": "2 osobowa gra Pong",
+          "description": "Gra Pong na Raspberry Pi 4 wyświetlana na matrycy 8x16 LED RGB. Gracze sterują paletkami za pomocą potencjometrów, a przyciski i buzzer dodają interaktywność, umożliwiając zmianę prędkości piłki, losowe zdarzenia oraz efekty dźwiękowe. Gra zawiera pełną logikę rozgrywki, dynamiczne wyświetlanie elementów na matrycy LED, regulację prędkości, zmniejszanie paletki oraz system wyświetlania wyników. Po trzech punktach zwycięzca otrzymuje koronę na ekranie.",
+          "technology": [
+              "Jednostka sterująca - Raspberry PI",
+              "Prezentacja obrazu - LED RGB",
+              "Logika gry - Python"
+          ],
+          "image": "/photos/Pong",
+          "video": "/photos/wideo/z7_155941.mp4"
+        }, 
+        {
+          "name": "SkryptyBash",
+          "title": "Skrypty w bashu",
+          "description": "Pisałam proste skrypty w Bashu, takie jak skrypt do generowania miniatur obrazów o określonym rozmiarze, które następnie były umieszczane w odpowiednich podkatalogach, oraz skrypt przypominający o nadchodzących wydarzeniach.",
+          "technology": [
+              "bash"
+          ],
+          "image": "/photos/SkryptyBash"
+        },
+        {
+          "name": "PDDL",
+          "title": "System regułowy",
+          "description": "System regułowy wspierający wybór prezentu, wykorzystujący CLIPS jako silnik regułowy oraz Pythona jako interfejs użytkownika i narzędzie do integracji.",
+          "technology": [
+             "System regułowy - CLIPS",
+             "Interfejs użytkownika - Python"
+          ],
+          "image": "/photos/PDDL"
+        },
+        {
+          "name": "Harmonogram",
+          "title": "Układanie Planu Zajęć w Kontekście Algorytmów Kolorowania Grafu",
+          "description": "Na zajęciach z optymalizacji kombinatorycznej implementowałam algorytmy kolorowania grafów do tworzenia harmonogramu zajęć, np. planu lekcji. Proces obejmował: \nPrzekształcenie programu nauczania w graf, przedstawiający zajęcia, nauczycieli, klasy, przedmioty i godziny.\nKolorowanie grafu w celu stworzenia logicznych bloków czasowych, eliminujących konflikty.\nPrzekształcenie pokolorowanego grafu w plan lekcji, przydzielając zajęcia, nauczycieli, klasy i przedmioty do określonych godzin. Zaimplementowałam dwie metody kolorowania: zachłanną i genetyczną",
+          "technology": [
+            "Logika programu - C++",
+            "Generowanie graficznych planów zajęć - Python"
+          ],
+          "image": "/photos/Harmonogram"
+        }
+  ]
+}
+      

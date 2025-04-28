@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title><%= project.title %></title>
+    <link rel="stylesheet" href="/template_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="/script.js" defer></script>
+</head>
+<body>
+
+    <div class="row">
+        <div class="column1">
+            <a href="/">
+                <img src="/photos/logoA.png" class="logoProject" alt="Logo projektu">
+            </a>        
+            <header>
+                <h1><%= project.title %></h1>
+            </header>
+            <section id="project-details">
+                <p><%= project.description %></p>
+
+                <h2>Użyte technologie</h2>
+                <ul>
+                    <% project.technology.forEach(function(tech) { 
+                        let parts = tech.split(" - "); 
+                    %>
+                        <li><strong><%= parts[0] %></strong><% if (parts[1]) { %> - <%= parts[1] %><% } %></li>
+                    <% }); %>
+                </ul>
+
+                <% if (typeof project.link !== 'undefined' && project.link) { %>
+                    <h2>Github</h2>
+                    <a href="<%= project.link %>" class="githubBtn">
+                        <i class="fa-brands fa-github"></i>
+                    </a>    
+                <% } %>   
+                <% if (project.video) { %>
+                    <h2>Wideo pokazujące działanie projektu</h2>
+                    <video controls>
+                        <source src="<%= project.video %>" type="video/mp4">
+                        Twoja przeglądarka nie obsługuje tagu wideo.
+                    </video>
+                <% } %>           
+            </section>
+        </div>
+
+        <!-- Prawa kolumna - galeria -->
+        <div class="column2"> 
+            <section id="project-details">
+                <h2 id="galleryHeader">Galeria projektu</h2>
+
+                <% if (typeof imagePaths !== 'undefined' && imagePaths.length > 0) { %>
+                        <div class="slideshow-container">
+                        <% imagePaths.forEach((image, index) => { %>
+                            <img class="mySlides" src="<%= image %>" alt="Obraz projektu" width="100%" style="<%= (index === 0) ? 'display:block;' : 'display:none;' %>">
+                        <% }); %>
+                        </div>
+                    <% } else { %>
+                        <p>Brak obrazów dla tego projektu.</p>
+                    <% } %>
+                <% if(imagePaths.length > 1) { %>
+                    <div class="navigation-container">
+                        <div class="leftArrow">
+                            <i class="fa-solid fa-arrow-left"></i>
+                        </div>
+                        <div class="dot-container">
+                            <% imagePaths.forEach((image, index) => { %>
+                            <span class="dot" onclick="currentSlide(<%= index + 1 %>)"></span>
+                            <% }); %>
+                        </div>
+                        <div class="rightArrow">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                <%} %>
+            </section>
+        </div>
+    </div>
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h2>Agnieszka Maleszka</h2>
+                <ul class="footer-links">
+                    <li><a href="#header">Header</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">My Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/agnieszka.maleszka.7/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://pl.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/AgnieszkaMaleszka"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Agnieszka Maleszka</p>
+        </div>
+        </div>
+    </footer>
+</body>
+</html>
