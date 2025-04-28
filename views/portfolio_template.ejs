@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio_style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <script src="portfolio.js" defer></script>
+</head>
+
+<body>
+    <a href="/">
+        <img src="/photos/logoA.png" class="logoProject" alt="Logo projektu">
+    </a>
+    <h1>Galeria projektów</h1>
+    <form method="GET" action="/Portfolio" id="technologyForm">
+        <label class="filter" for="technology">Filtruj projekty po technologii:</label>
+        <select name="technology" id="technology" onchange="this.form.submit()">
+            <option value="">Wybierz technologię</option>
+            <% technologies.forEach(tech => { %>
+                <option value="<%= tech %>" <%= tech === technologyFilter ? 'selected' : '' %>><%= tech %></option>
+            <% }) %>
+        </select>
+        <a href="#" id="resetFilterBtn" class="resetBtn">
+            <i class="fa-solid fa-arrow-rotate-right"></i>
+        </a>
+    </form>
+   
+    <div class="gallery">
+        <% projects.forEach(project => { %>
+            <div class="galleryItem">
+                <% console.log(project.image); %> <!-- Sprawdzenie wygenerowanej ścieżki obrazu -->
+                <% if (project.image) { %>
+                    <img src="<%= project.image %>" alt="Zdjęcie projektu" class="galleryImage">
+                <% } else { %>
+                    <p>Brak zdjęcia dla projektu: <%= project.title %></p>
+                <% } %>
+                <div class="layer">
+                    <h3><%= project.title %></h3>
+                    <p><%= project.description %></p>
+                    <a href="<%= project.subpage %>" class="projectLink">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                    </a>
+                </div>
+            </div>
+        <% }) %>
+    </div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-left">
+                <h2>Agnieszka Maleszka</h2>
+                <ul class="footer-links">
+                    <li><a href="#header">Header</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">My Projects</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                </ul>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/agnieszka.maleszka.7/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://pl.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/AgnieszkaMaleszka"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Agnieszka Maleszka</p>
+        </div>
+        </div>
+    </footer>
+</body>
+
+</html>

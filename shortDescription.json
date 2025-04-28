@@ -1,0 +1,78 @@
+{
+    "projects": [
+      {
+        "name": "Wisielec",
+        "title": "Gra sieciowa w wisielca",
+        "description": "Gra sieciowa, w której gracze odgadują hasła, zdobywając punkty i premie za szybkość. (C++, BSD socket API, QT)" ,
+        "technology": ["C++", "BSD socket API", "QT"],
+        "image": "/photos/MainProjects/1_Wisielec1.jpg",
+        "subpage": "/project/wisielec"
+      },
+      {
+        "name": "Szachy",
+        "title": "Gra w szachy",
+        "description": "Gra w szachy dla dwóch graczy. Z możliwością zapisania stanu planszy do pliku. (C++, SFML)" ,
+        "technology": ["C++", "SFML"],
+        "image": "/photos/MainProjects/2_Szachy_1.jpg",
+        "subpage": "/project/Szachy"
+      },
+      {
+        "name": "Akwarium",
+        "title": "Animacja 3D akwarium",
+        "description": "Animacja 3D akwaium symulująca pływanie ryb. Za pomocą strzałek oraz myszki można poruszać się po całej scenie. (C++, Assimp, OpenGL)" ,
+        "technology": ["C++", "Assimp", "OpenGL"],
+        "image": "/photos/MainProjects/3_rybki1.jpg",
+        "subpage": "/project/Akwarium"
+      },
+      {
+        "name": "Gimp",
+        "title": "Projekty graficzne",
+        "description": "Plakaty i dyplomy zaprojektowane na szkolny turniej układania kostki Rubika.",
+        "technology": ["Gimp"],
+        "image": "/photos/MainProjects/6_PlakatKostka.jpg",
+        "subpage": "/project/Gimp"
+      },
+      {
+        "name": "Robot",
+        "title": "Robot omijający przeszkody",
+        "description": "Robot wykrywający i omijający przeszkody. Samodzielnie wytrawiona płytka PCB. (Arduino IDE)" ,
+        "technology": ["Arduino IDE"],
+        "image": "/photos/MainProjects/7_image.jpg",
+        "subpage": "/project/Robot ASK"
+      }, 
+      {
+        "name": "Pong",
+        "title": "2 osobowa gra Pong" ,
+        "description": "Gra Pong na Raspberry Pi 4, sterowana potencjometrami, z przyciskami i buzzerem. Wyświetlana na matrycy 8x16 LED RGB, z pełną logiką gry, zmianą prędkości piłki i efektami dźwiękowymi. (Python, LED RGB)",
+        "technology": ["Python", "Raspberry Pi 4", "LED RGB"],
+        "image": "/photos/MainProjects/5_pong.jpg",
+        "subpage": "/project/Pong"
+      },
+      {
+        "name": "SkryptyBash",
+        "title": "Skrypty (bash)",
+        "technology": ["Bash"],
+        "image": "/photos/MainProjects/8_code2.jpg",
+        "subpage": "/project/SkryptyBash"
+      }, 
+      {
+        "name": "PDDL",
+        "title": "Skrypty (bash)",
+        "description": "Projekt regułowy systemu eksperckiego polegający na wyborze prezentu. (CLIPS, Python)",
+        "technology": ["CLIPS", "Python"],
+        "image": "/photos/MainProjects/4_App.jpg",
+        "subpage": "/project/PDDL"
+      },         
+      {
+        "name": "Harmonogram",
+        "title": "Harmonogramy zajęć",
+        "description": "Algorytmy kolorowania grafów do tworzenia harmonogramu zajęć, np. planu lekcji. (C++, Python)",
+        "technology": [
+          "C++",
+          "Python"
+        ],
+        "image": "/photos/MainProjects/9_plan.jpg",
+        "subpage": "/project/Harmonogram"
+      }
+    ]
+}
