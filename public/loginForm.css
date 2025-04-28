@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f5f5f5;
+    flex-direction: column;
+}
+
+.box {
+    width: 350px;
+    background: #ca5a4c;
+    padding: 30px;
+    border-radius: 0 0 10px 10px;
+    text-align: center;
+}
+
+.tabs {
+    display: flex;
+    justify-content: center;
+}
+
+.tab-btn {
+    border-radius: 10px 10px 0 0;
+    width: 175px;
+    background: #98453a;
+    border: none;
+    color: white;
+    font-size: 18px;
+    cursor: pointer;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+.tab-btn.active {
+    background: #ca5a4c;
+    font-weight: bold;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+h1 {
+    margin-bottom: 20px;
+    color: white;
+}
+
+form input {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background-color: #393030;
+    padding: 15px;
+    margin: 10px 0;
+    color: #b7b2ad;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+.btn {
+    display: block;
+    margin: 20px auto;
+    width: fit-content;
+    border: 1px solid #ca5a4c;
+    padding: 14px 50px;
+    border-radius: 6px;
+    color: #393030;
+    text-decoration: none;
+    transition: 0.3s;
+    font-weight: 700;
+    background: white;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+.btn:hover {
+    background-color: #ca5a4c;
+    color: white;
+}
+/*stopka */
+footer {
+    left: 0;
+    bottom: 0;
+    width:  100%;
+    padding: 30px;
+    background-color: #ca5a4c;
+    color: white;
+}
+footer {
+    position: absolute;
+} 
+
+.footer-container{
+    margin: 0 30px;
+}
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+.footer-links li {
+    margin: 5px 0;
+}
+.footer-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+.footer-links a:hover{
+    text-decoration: underline;
+}
+footer .social-icons a {
+    font-size: 24px;
+    margin-right: 15px;
+    color: white;
+    transform: 0.5s;
+}
+footer .social-icons a:hover {
+    transform: translateY(-5px);
+    color: white;
+}
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 10px;
+}
+.footer-bottom ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+} 

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Portfolio - Login/Register</title>
+        <link rel="stylesheet" href="loginForm.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+    <body>
+        <div class="tabs">
+            <button class="tab-btn active" onclick="openTab(event, 'login')">Log in</button>
+            <button class="tab-btn" onclick="openTab(event, 'register')">Register</button>
+        </div>
+        <div class="box">
+            <div id="login" class="tab-content active">
+                <h1>Log in</h1>
+                <form>
+                    <input type="text" placeholder="Username">
+                    <input type="password" placeholder="Password">
+                    <button type="submit" class="btn">Submit</button>
+                </form>
+            </div>
+
+            <div id="register" class="tab-content">
+                <h1>Register</h1>
+                <form>
+                    <input type="text" placeholder="Username">
+                    <input type="email" placeholder="Email">
+                    <input type="password" placeholder="Password">
+                    <input type="password" placeholder="Confirm Password">
+                    <button type="submit" class="btn">Register</button>
+                </form>
+            </div>
+        </div>
+        <script>
+            function openTab(event, tabId) {
+                document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+                document.querySelectorAll('.tab-btn').forEach(btn => btn.classList.remove('active'));
+                document.getElementById(tabId).classList.add('active');
+                event.currentTarget.classList.add('active');
+            }
+        </script>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-left">
+                    <h2>Agnieszka Maleszka</h2>
+                    <ul class="footer-links">
+                        <li><a href="#header">Header</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">My Projects</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/agnieszka.maleszka.7/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://pl.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/AgnieszkaMaleszka"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Agnieszka Maleszka</p>
+            </div>
+            </div>
+        </footer>
+    </body>
+</html>

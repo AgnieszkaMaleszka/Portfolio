@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="pl">
+    <head>
+        <meta charset = "UTF-8">
+        <meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+        <meta name = "viewport" content="width=device-width, initial-scale=1.0"> 
+        <title>Portfolio</title>
+        <link rel="stylesheet" href = "style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    </head>
+    <body>
+        <div id = "header">
+            <div class="container">
+                <nav>
+                    <img src = "photos/logoA.png" class = "logo">
+                    <ul id = "sidemenu">
+                        <li><a href = "#header">Home</a></li>
+                        <li><a href = "#about">About</a></li>
+                        <li><a href = "#portfolio">Portfolio</a></li>
+                        <li><a href = "#contact">Contact</a></li>
+                        <i class="fas fa-times" onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                    <i class="fa-solid fa-user"></i>
+                </nav>
+            </div>
+            <div class="header-text">
+                <p>Studentka trzeciego roku informatyki</p>
+                <h1>Hej, nazywam się <br><span class="auto-type"></span></h1>
+            </div>
+        </div>
+        <!-----------------o mnie ---------------------->
+        <div id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="about-col-1">
+                        <img src="photos/myPhoto.jpg" width=500>
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="sub-title">Poznajmy się</h1>
+                        <p>
+                            Cześć! Nazywam się Agnieszka Maleszka i jestem studentką Informatyki na Politechnice Poznańskiej. Od zawsze pasjonowało mnie programowanie i nowe technologie, dlatego aktywnie rozwijam swoje umiejętności w tym kierunku.
+
+                            Obecnie skupiam się na nauce i doskonaleniu technologii webowych, takich jak HTML, CSS oraz Node.js. Jednocześnie rozwijam swoją wiedzę w obszarze przetwarzania języka naturalnego (NLP) oraz sieci neuronowych, poznając nowoczesne metody uczenia maszynowego i sztucznej inteligencji.
+                            
+                            Lubię budować aplikacje mobilne w Kotlinie, eksplorując możliwości tworzenia nowoczesnych i intuicyjnych rozwiązań. Mam również doświadczenie w pracy z C++ i frameworkiem Qt, gdzie tworzyłam aplikacje desktopowe.          
+                        </p>
+                        <div class="titles">
+                            <p class="links active-link" onclick="opentab('skills')">Skills</p>
+                            <p class="links" onclick="opentab('experience')">Experience</p>
+                            <p class="links" onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="contents active-tab" id = "skills">
+                            <ul>
+                                <li><span>Web Development</span><br>Tworzenie stron i aplikacji internetowych (HTML, CSS, Node.js)</li>
+                                <li><span>Mobile Development</span><br>Budowanie aplikacji mobilnych w Kotlinie</li>
+                                <li><span>Artificial Intelligence</span><br>Przetwarzanie języka naturalnego (NLP) i sieci neuronowe</li>
+                                <li><span>Desktop Development</span><br>Tworzenie aplikacji desktopowych w C++ z wykorzystaniem Qt</li>
+                                <li><span>UI/UX Design</span><br>Projektowanie interfejsów użytkownika dla stron i aplikacji</li>
+                                <li><span>Network Programming</span><br>Tworzenie aplikacji webowych z użyciem socketów</li>
+                            </ul>                                                        
+                        </div>
+                        <div class="contents" id = "experience">
+                            <ul>
+                                <li><span>2023 i 2024</span><br>Udzielanie korepetycji z matematyki, przygotowanie uczniów do matury.</li>
+                            </ul>
+                        </div>
+                        <div class="contents" id = "education">
+                            <ul>
+                                <li><span>2022-teraz</span><br>Politechnika Poznańska Informatyka</li>
+                                <li><span>2019-2022</span><br>II Liceum Ogólnokształcące im. Krzysztofa Kamila Baczyńskiego - profil matematyczno fizyczno informatyczny</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!----------------------aktualnie------------------->
+        <div id="current-projects">
+            <div class="container">
+                <h1 class="sub-title">Aktualnie rozwijane projekty</h1>
+                <div class="current-project-list">
+                    <div class="current-project">
+                        <img src="photos/MainProjects/drink_app_logo.jpg" alt="Projekt 1">
+                        <div class="layer">
+                            <h3>AI Bartender</h3>
+                            <p>
+                                Mobilna aplikacja pełniąca rolę wirtualnego barmana. Użytkownik podaje listę dostępnych składników, a aplikacja, korzystając z zapytań do modelu AI Gemini, proponuje możliwe drinki do przygotowania. (Kotlin)
+                            </p>
+                            <a href="/project/project1">
+                                <i class="fa-solid fa-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="current-project">
+                        <img src="photos/MainProjects/logo.png" alt="Projekt 2">
+                        <div class="layer">
+                            <h3>Restaurant Adviser </h3>
+                            <p>
+                                Mobilna aplikacja pomagająca w wyborze restauracji na podstawie lokalizacji użytkownika. 
+                                Dzięki integracji z API Google Maps umożliwia szybkie i intuicyjne wyszukiwanie najlepszych lokali w okolicy. 
+                                Aplikacja wspiera logowanie przez Facebooka, korzysta z zewnętrznej bazy danych do przechowywania informacji o użytkownikach oraz wykorzystuje czujniki urządzenia mobilnego. (Kotlin)                            </p>
+                            <a href="/project/project2">
+                                <i class="fa-solid fa-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="current-project">
+                        <img src="photos/MainProjects/sudoku.png" alt="Projekt 3">
+                        <div class="layer">
+                            <h3>Sudoku solver</h3>
+                            <p>
+                                Program do rozwiązywania Sudoku, wykorzystujący zarówno podejście sekwencyjne, jak i równoległe przy użyciu OpenMP oraz CUDA. Zawiera także generator losowych plansz Sudoku. (Python, C++, OpenMP, CUDA)
+                            </p>
+                            <a href="/project/project3">
+                                <i class="fa-solid fa-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!----------------------portfolio------------------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class ="sub-title">My projects</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="photos/MainProjects/1_Wisielec1.png" alt="Wisielec">
+                        <div class="layer">
+                            <h3>Gra sieciowa w wisielca</h3>
+                            <p>
+                                Gra sieciowa, w której gracze odgadują hasła, zdobywając punkty i premie za szybkość. (C++, BSD socket API, QT)
+                            </p>
+                            <a href="/project/wisielec">
+                                <i class="fa-solid fa-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="photos/Szachy/szachy_4.png">
+                        <div class="layer">
+                            <h3>Szachy</h3>
+                            <p>
+                                Gra w szachy dla dwóch graczy. Z możliwością zapisania stanu planszy do pliku. (C++, SFML)
+                            </p>
+                            <a href="/project/Szachy">
+                                <i class="fa-solid fa-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="photos/akwarium/rybki1.png">
+                        <div class="layer">
+                            <h3>Animacja 3D akwarium</h3>
+                            <p>
+                                Animacja 3D akwaium symulująca pływanie ryb. Za pomocą strzałek oraz myszki można poruszać się po całej scenie. (C++, Assimp, OpenGL)
+                            </p>
+                            <a href="/project/akwarium">
+                                <i class="fa-solid fa-up-right-from-square"></i>
+                            </a>
+                            </p>
+                        </div>
+                    </div>
+                    <a href="/Portfolio" class="btn">See more</a>
+                </div>
+        </div>
+        </div>
+        <!----------------------contact------------------->
+        <div id = "contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title"> Contact Me</h1>
+                        <p id ="email"> <i class="fa-solid fa-paper-plane"></i>agnieszka.maleszka03@gmail.com</p>
+                        <p id = "phone"><i class="fa-solid fa-phone"></i>530313989</p>
+                        <div class="social-icons">
+                            <a href="https://www.facebook.com/agnieszka.maleszka.7/"><i class="fa-brands fa-facebook"></i></a>
+                            <a href="https://pl.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/AgnieszkaMaleszka"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                        <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                        <form name="submit-to-google-sheet">
+                            <input type="Text" name = "Name" placeholder="Your Name" required>
+                            <input type="Email" name = "Email" placeholder="Your Email" required>
+                            <textarea name="Message" rows = "6" placeholder="Your Message"></textarea>
+                            <button type = "submit" class="btn btn2">Submit</button>
+                        </form>
+                    </div>
+                    <span id = "msg"></span>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-left">
+                    <h2>Agnieszka Maleszka</h2>
+                    <ul class="footer-links">
+                        <li><a href="#header">Header</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#portfolio">My Projects</a></li>
+                        <li><a href="#contact">Contact Me</a></li>
+                    </ul>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/agnieszka.maleszka.7/"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="https://pl.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/AgnieszkaMaleszka"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Agnieszka Maleszka</p>
+            </div>
+            </div>
+        </footer>
+        <script>
+            var tablinks = document.getElementsByClassName("links");
+            var tabcontents = document.getElementsByClassName("contents");
+        
+            function opentab(tabname) {
+                for (var tablink of tablinks) {
+                    tablink.classList.remove("active-link");
+                }
+                for (var tabcontent of tabcontents) {
+                    tabcontent.classList.remove("active-tab");
+                }
+        
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+        </script>
+        <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js" ></script>
+        
+        <script> 
+            var typed = new Typed(".auto-type", {
+                strings: ["Agnieszka"], 
+                typeSpeed: 150, 
+                backSpeed: 150,
+                loop: false
+            })
+        </script>
+        
+        <script>
+            document.getElementById("email").addEventListener("click", function() {
+                navigator.clipboard.writeText("agnieszka.maleszka03@gmail.com");
+            });
+
+            document.getElementById("phone").addEventListener("click", function() {
+                navigator.clipboard.writeText("530313989");
+            });
+        </script>
+  
+        <script>
+            const scriptURL = 'https://script.google.com/macros/s/AKfycbzYc9_LRzMmxncBArfqUqfHowZI5T2ts9RMuLbsg1D_FduW12DwsUZadcFy-hJeako5/exec'
+            const form = document.forms['submit-to-google-sheet']
+            const msg = document.getElementById("msg");
+
+            form.addEventListener('submit', e => {
+                e.preventDefault();
+                msg.innerText = "Wysyłanie...";
+
+                fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+                    .then(response => {
+                        msg.innerText = "Wiadomość wysłana!";
+                        form.reset();
+                        setTimeout(() => msg.innerText = "", 3000);
+                    })
+                    .catch(error => {
+                        console.error('Błąd!', error.message);
+                        msg.innerText = "Błąd wysyłania!";
+                    });
+            });
+        </script>
+        <script>
+            var sidemenu = document.getElementById("sidemenu");
+            function openmenu(){
+                sidemenu.style.right = "0";
+            }
+            function closemenu(){
+                sidemenu.style.right = "-200px";
+            }
+        </script>
+</html>
