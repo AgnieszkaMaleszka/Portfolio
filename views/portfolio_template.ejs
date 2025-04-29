@@ -31,7 +31,7 @@
     <div class="gallery">
         <% projects.forEach(project => { %>
             <div class="galleryItem">
-                <% console.log(project.image); %> <!-- Sprawdzenie wygenerowanej ścieżki obrazu -->
+                <% console.log(project.image); %> 
                 <% if (project.image) { %>
                     <img src="<%= project.image %>" alt="Zdjęcie projektu" class="galleryImage">
                 <% } else { %>
