@@ -1,23 +1,54 @@
 {
   "projects": [
     {
-      "name": "Wisielec",
-      "title": "Wisielec",
-      "description": "Gra sieciowa, w której gracze odgadują hasła w systemie turowym. Dołączają do wspólnego pokoju, zdobywają punkty za poprawne litery, a najszybsi otrzymują premię. Nowi gracze mogą dołączać w trakcie rozgrywki, ale gra rozpoczyna się przy co najmniej dwóch osobach. Każda tura ma limit czasu, a kategoria hasła jest podana na początku." ,
-      "technology": ["Program serwera - C++",
-                      "Obsługa sieci - BSD socket API", 
-                      "Kod klienta - QT"],
-      "image": "/photos/Wisielec",
-      "link": "https://github.com/AgnieszkaMaleszka/Wisielec"
+      "name": "BarMate",
+      "title": "BarMate",
+      "description": "Mobilna aplikacja pełniąca rolę wirtualnego barmana. Użytkownik podaje listę dostępnych składników, a aplikacja, korzystając z modelu AI Gemini, proponuje możliwe drinki do przygotowania. Funkcjonalność obejmuje także możliwość zapisywania ulubionych przepisów oraz nowoczesny, intuicyjny interfejs. Dodatkowo w aplikacji został zaimplementowany stoper, który pomaga w odmierzaniu czasu podczas przygotowywania drinków, oraz funkcja umożliwiająca wysyłanie listy składników za pomocą wiadomości SMS.",
+      "technology": [
+        "Kotlin - interfejs użytkownika",
+        "AI Gemini - generowanie propozycji drinków."
+      ],
+      "image": "/photos/BarMate"
     },
-    {
-      "name": "Szachy",
-      "title": "Szachy",
-      "description": "Gra umożliwiająca rozgrywkę w szachy dla dwóch graczy. Obsługuje ruchy zgodne z zasadami FIDE, wykrywa szach, mat i pat. Posiada interfejs umożliwiający intuicyjne poruszanie figurami oraz analizę pozycji.",
-      "technology":["Kod programu - C++",
-                    "Interfejs użytkownika - SFML "],
-      "image": "/photos/Szachy"
-    }, 
+      {
+        "name": "RestaurantAdviser",
+        "title": "Restaurant Adviser",
+        "description": "Mobilna aplikacja pomagająca użytkownikowi w wyborze restauracji. Zbiera preferencje użytkownika, takie jak maksymalna odległość od lokalizacji oraz minimalna ocena restauracji, a następnie układa drabinkę turniejową, umożliwiając wybór najlepszej opcji poprzez serię pojedynków między lokalami. Aplikacja posiada również tryb 'Shake-o-mat', w którym użytkownik poprzez potrząśnięcie telefonem losuje jedną z pobliskich restauracji. System integruje się z Google Places API do wyszukiwania lokali, wykorzystuje zewnętrzną bazę danych do przechowywania informacji o użytkownikach oraz umożliwia logowanie przez Facebooka. (Kotlin, Google Places API, Facebook Login)",
+        "technology": [
+          "Kotlin - interfejs użytkownika",
+          "Google Places API - wyszukiwanie restauracji"
+        ],
+        "image": "/photos/RestaurantAdviser"
+      },
+      {
+        "name": "SudokuSolver",
+        "title": "Sudoku Solver",
+        "description": "Program do rozwiązywania Sudoku, wykorzystujący podejście zarówno sekwencyjne (C++), jak i równoległe (OpenMP, CUDA). Projekt obejmuje również generator losowych plansz Sudoku oraz przeprowadzenie analizy porównawczej wydajności różnych metod rozwiązania. Powstanie także prosty interfejs graficzny do obsługi programu w Pythonie.",
+        "technology": [
+          "C++ - wersja sekwencyjna programu",
+          "CUDA i OpenMP - równoleglenie obliczeń",
+          "Python - interfejs graficzny (GUI)"
+        ],
+        "image": "/photos/SudokuSolver"
+      },    
+      {
+        "name": "Wisielec",
+        "title": "Wisielec",
+        "description": "Gra sieciowa, w której gracze odgadują hasła w systemie turowym. Dołączają do wspólnego pokoju, zdobywają punkty za poprawne litery, a najszybsi otrzymują premię. Nowi gracze mogą dołączać w trakcie rozgrywki, ale gra rozpoczyna się przy co najmniej dwóch osobach. Każda tura ma limit czasu, a kategoria hasła jest podana na początku." ,
+        "technology": ["Program serwera - C++",
+                        "Obsługa sieci - BSD socket API", 
+                        "Kod klienta - QT"],
+        "image": "/photos/Wisielec",
+        "link": "https://github.com/AgnieszkaMaleszka/Wisielec"
+      },
+      {
+        "name": "Szachy",
+        "title": "Szachy",
+        "description": "Gra umożliwiająca rozgrywkę w szachy dla dwóch graczy. Obsługuje ruchy zgodne z zasadami FIDE, wykrywa szach, mat i pat. Posiada interfejs umożliwiający intuicyjne poruszanie figurami oraz analizę pozycji.",
+        "technology":["Kod programu - C++",
+                      "Interfejs użytkownika - SFML "],
+        "image": "/photos/Szachy"
+      }, 
         {
           "name": "Akwarium",
           "title": "Akwarium",
@@ -92,6 +123,47 @@
             "Generowanie graficznych planów zajęć - Python"
           ],
           "image": "/photos/Harmonogram"
+        },
+                {
+          "name": "SkryptyBash",
+          "title": "Skrypty w bashu",
+          "description": "Pisałam proste skrypty w Bashu, takie jak skrypt do generowania miniatur obrazów o określonym rozmiarze, które następnie były umieszczane w odpowiednich podkatalogach, oraz skrypt przypominający o nadchodzących wydarzeniach.",
+          "technology": [
+              "bash"
+          ],
+          "image": "/photos/SkryptyBash"
+        },
+        {
+          "name": "PDDL",
+          "title": "System regułowy",
+          "description": "System regułowy wspierający wybór prezentu, wykorzystujący CLIPS jako silnik regułowy oraz Pythona jako interfejs użytkownika i narzędzie do integracji.",
+          "technology": [
+             "System regułowy - CLIPS",
+             "Interfejs użytkownika - Python"
+          ],
+          "link": "https://github.com/AgnieszkaMaleszka/Gift-guide",
+          "image": "/photos/PDDL"
+        },
+        {
+          "name": "Harmonogram",
+          "title": "Układanie Planu Zajęć w Kontekście Algorytmów Kolorowania Grafu",
+          "description": "Na zajęciach z optymalizacji kombinatorycznej implementowałam algorytmy kolorowania grafów do tworzenia harmonogramu zajęć, np. planu lekcji. Proces obejmował: \nPrzekształcenie programu nauczania w graf, przedstawiający zajęcia, nauczycieli, klasy, przedmioty i godziny.\nKolorowanie grafu w celu stworzenia logicznych bloków czasowych, eliminujących konflikty.\nPrzekształcenie pokolorowanego grafu w plan lekcji, przydzielając zajęcia, nauczycieli, klasy i przedmioty do określonych godzin. Zaimplementowałam dwie metody kolorowania: zachłanną i genetyczną",
+          "technology": [
+            "Logika programu - C++",
+            "Generowanie graficznych planów zajęć - Python"
+          ],
+          "image": "/photos/Harmonogram"
+        }, 
+        {
+          "name": "Cukiernictwo",
+          "title": "Cukiernictwo",
+          "description": "W wolnym czasie bardzo lubię piec. Rodzina twierdzi że całkiem mi to wychodzi :).",
+          "technology": [
+            "Piekarnik",
+            "Cukier"
+          ],
+          "image": "/photos/Wypieki",
+          "subpage": "/project/Cukiernictwo"
         }
   ]
 }

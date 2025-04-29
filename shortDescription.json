@@ -73,6 +73,45 @@
         ],
         "image": "/photos/MainProjects/9_plan.jpg",
         "subpage": "/project/Harmonogram"
+      }, 
+      {
+        "name": "BarMate",
+        "title": "BarMate",
+        "description": "Wirtualny barman w Twoim telefonie. (Kotlin, Gemini)",
+        "technology": ["Kotlin", "AI Gemini"],
+        "image": "/photos/MainProjects/drink_app_log.png",
+        "subpage": "/project/BarMate"
+      }, 
+      {
+        "name": "RestaurantAdviser",
+        "title": "Restaurant Advise",
+        "description": "Mobilna aplikacja pomagająca wybrać restaurację.  (Kotlin, Google Maps API)",
+        "technology": ["Kotlin", "Google Maps API"],
+        "image": "/photos/MainProjects/logo2.png",
+        "subpage": "/project/RestaurantAdviser"
+      },         
+      {
+        "name": "Sudoku solver",
+        "title": "Sudoku solver",
+        "description": "Równoległy solver sudoku. (C++,OpenMp, Python, Cuda)",
+        "technology": [
+          "C++",
+          "Cuda", 
+          "OpenMp",
+          "Python"
+        ],
+        "image": "/photos/MainProjects/sudoku2.png",
+        "subpage": "/project/SudokuSolver"
+      }, 
+      {
+        "name": "Cukiernictwo",
+        "title": "Cukiernictwo",
+        "technology": [
+          "piekarnik"
+        ],
+        "description": "W wolnym czasie bardzo lubię piec. Rodzina twierdzi że całkiem mi to wychodzi :).",
+        "image": "/photos/MainProjects/ciasto.png",
+        "subpage": "/project/Cukiernictwo"
       }
     ]
 }
