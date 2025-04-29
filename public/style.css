@@ -166,7 +166,7 @@ nav ul li a:hover::after{
 
 .work-list {
     display: grid;
-    grid-template-rows: auto; /* Kontrola szerokości */
+    grid-template-rows: auto; 
     grid-gap: 40px; 
     margin-top: 50px;
 }
@@ -410,20 +410,16 @@ nav .fas{
     transform: translateY(-5px);
 }
 
-/* Current projects container */
 #current-projects {
-    padding: 50px 0; /* Optional: Add padding to top and bottom */
-}
+    padding: 50px 0; 
 
-/* Display projects in a row */
 .current-project-list {
-    display: flex; /* Flexbox to align children side by side */
-    justify-content: space-between; /* Add space between items */
-    gap: 20px; /* Optional: add a gap between items */
-    flex-wrap: wrap; /* Allows wrapping on smaller screens */
+    display: flex; 
+    justify-content: space-between; 
+    gap: 20px; 
+    flex-wrap: wrap; 
 }
 
-/* Individual project styling */
 .current-project {
     width: 30%; 
     position: relative;
@@ -432,9 +428,8 @@ nav .fas{
     transition: transform 0.3s ease;
 }
 
-/* Optional: Adjust image styling */
 .current-project img {
-    width: 100%; /* Ensure images take full width of their containers */
+    width: 100%;
     height: auto;
     border-radius: 10px;
 }
@@ -464,9 +459,8 @@ nav .fas{
     opacity: 0.9;
     border-radius: 10px;
 }
-/* Optional: Hover effect */
 .current-project:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
+    transform: scale(1.05); 
 }
 
 /*--------------mniejszy ekran -------------*/
@@ -539,4 +533,5 @@ nav .fas{
         width: 100px;
     }
 
+}
 }

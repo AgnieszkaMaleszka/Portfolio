@@ -32,6 +32,8 @@ h1 {
 }
 .filter{
     margin-left: 50px;
+    margin-right: 20px;
+    font-size: 20px;
 }
 .gallery {
     display: grid;
@@ -117,6 +119,7 @@ h1 {
 
 .resetBtn{
     background-color: #4c70c0;
+    margin-left: 20px;
     color: white;
     width: 60px;
     height: 60px;
@@ -196,5 +199,25 @@ footer .social-icons a:hover {
     padding-top: 10px;
 }
 
-
+select {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 16px;
+    color: #333;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px;
+    cursor: pointer;
+    min-width: 200px;
+}
+select:focus {
+    border-color: #6ca0dc;
+    outline: none;
+    box-shadow: 0 0 5px rgba(108, 160, 220, 0.5);
+}
 

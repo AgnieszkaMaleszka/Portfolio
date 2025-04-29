@@ -258,7 +258,7 @@ footer .social-icons a:hover {
     body {
         display: flex;
         flex-direction: column;
-        min-height: 100vh; /* Cała wysokość ekranu */
+        min-height: 100vh; 
         margin: 0;
     }
 
