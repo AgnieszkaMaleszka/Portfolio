@@ -7,6 +7,7 @@
         <title>Portfolio</title>
         <link rel="stylesheet" href = "style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        
     </head>
     <body>
         <div id = "header">
@@ -25,8 +26,8 @@
                 </nav>
             </div>
             <div class="header-text">
-                <p>Studentka trzeciego roku informatyki</p>
-                <h1>Hej, nazywam się <br><span class="auto-type"></span></h1>
+                <p>Studentka trzeciego <br> roku informatyki</p>
+                <h1>Hej, jestem <br><span class="auto-type"></span></h1>
             </div>
         </div>
         <!-----------------o mnie ---------------------->
@@ -82,8 +83,7 @@
                         <div class="layer">
                             <h3>BarMate</h3>
                             <p>
-                                Mobilna aplikacja pełniąca rolę wirtualnego barmana. Użytkownik podaje listę dostępnych składników, a aplikacja, korzystając z zapytań do modelu AI Gemini, proponuje możliwe drinki do przygotowania. (Kotlin)
-                            </p>
+                                Aplikacja mobilna w Kotlinie, która na podstawie składników i zapytań do AI Gemini proponuje możliwe drinki do przygotowania. (Kotlin, Gemini AI)                            </p>
                             <a href="/project/BarMate">
                                 <i class="fa-solid fa-up-right-from-square"></i>
                             </a>
@@ -93,10 +93,7 @@
                         <img src="photos/MainProjects/logo.png" alt="Projekt 2">
                         <div class="layer">
                             <h3>Restaurant Adviser </h3>
-                            <p>
-                                Mobilna aplikacja pomagająca w wyborze restauracji na podstawie lokalizacji użytkownika. 
-                                Dzięki integracji z API Google Maps umożliwia szybkie i intuicyjne wyszukiwanie najlepszych lokali w okolicy. 
-                                Aplikacja wspiera logowanie przez Facebooka, korzysta z zewnętrznej bazy danych do przechowywania informacji o użytkownikach oraz wykorzystuje czujniki urządzenia mobilnego. (Kotlin)                            </p>
+                            <p>Aplikacja mobilna w Kotlinie z Google Maps API, logowaniem Facebook SDK, zewn. bazą danych i obsługą czujników do lokalizacji i filtrowania restauracji. (Kotlin, Google Places API)   </p>
                             <a href="/project/RestaurantAdviser">
                                 <i class="fa-solid fa-up-right-from-square"></i>
                             </a>
@@ -107,7 +104,7 @@
                         <div class="layer">
                             <h3>Sudoku solver</h3>
                             <p>
-                                Program do rozwiązywania Sudoku, wykorzystujący zarówno podejście sekwencyjne, jak i równoległe przy użyciu OpenMP oraz CUDA. Zawiera także generator losowych plansz Sudoku. (Python, C++, OpenMP, CUDA)
+                                Program do rozwiązywania i generowania Sudoku z implementacją sekwencyjną, OpenMP i CUDA. (Python, C++, CUDA, OpenMP).                        
                             </p>
                             <a href="/project/SudokuSolver">
                                 <i class="fa-solid fa-up-right-from-square"></i>
@@ -170,8 +167,11 @@
                 <div class="row">
                     <div class="contact-left">
                         <h1 class="sub-title"> Zostaw kontakt do siebie!</h1>
-                        <p id ="email"> <i class="fa-solid fa-paper-plane"></i>agnieszka.maleszka03@gmail.com</p>
-                        <p id = "phone"><i class="fa-solid fa-phone"></i>530313989</p>
+                        <p id="email">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span id="email-text"></span>
+                          </p>
+                          
                         <div class="social-icons">
                             <a href="https://www.facebook.com/agnieszka.maleszka.7/"><i class="fa-brands fa-facebook"></i></a>
                             <a href="https://pl.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
@@ -279,5 +279,14 @@
             function closemenu(){
                 sidemenu.style.right = "-200px";
             }
+        </script>
+        <script>
+            // E-mail
+            const emailUser = "agnieszka.maleszka03";
+            const emailDomain = "gmail.com";
+            const email = `${emailUser}@${emailDomain}`;
+            document.getElementById("email-text").innerHTML = `<a href="mailto:${email}">${email}</a>`;
+
+            document.getElementById("phone-text").innerHTML = `<a href="tel:${phone}">${phone}</a>`;
         </script>
 </html>
