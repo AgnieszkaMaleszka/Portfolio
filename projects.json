@@ -23,14 +23,16 @@
       {
         "name": "SudokuSolver",
         "title": "Sudoku Solver",
-        "description": "Program do rozwiązywania Sudoku, wykorzystujący podejście zarówno sekwencyjne (C++), jak i równoległe (OpenMP, CUDA). Projekt obejmuje również generator losowych plansz Sudoku oraz przeprowadzenie analizy porównawczej wydajności różnych metod rozwiązania. Powstanie także prosty interfejs graficzny do obsługi programu w Pythonie.",
+        "description": "Projekt Sudoku Solver to aplikacja do rozwiązywania łamigłówek Sudoku zrealizowana w kilku wariantach obliczeniowych – od klasycznego rozwiązania sekwencyjnego w C++, po zrównoleglone wersje z użyciem OpenMP i CUDA. Dzięki temu możliwa była analiza wydajności różnych metod rozwiązywania problemu. Dodatkowo, aplikacja zawiera generator losowych plansz Sudoku oraz prosty, intuicyjny interfejs graficzny stworzony w Pythonie, ułatwiający obsługę programu.",
         "technology": [
-          "C++ - wersja sekwencyjna programu",
-          "CUDA i OpenMP - równoleglenie obliczeń",
-          "Python - interfejs graficzny (GUI)"
+          "C++ – implementacja wersji sekwencyjnej",
+          "CUDA & OpenMP – przyspieszenie działania przez równoleglenie obliczeń",
+          "Python (Tkinter) – graficzny interfejs użytkownika"
         ],
-        "image": "/photos/SudokuSolver"
-      },    
+        "image": "/photos/SudokuSolver",
+        "link": "https://github.com/AgnieszkaMaleszka/Sudoku-solver",
+        "PDF": "/photos/sudoku.pdf"
+      },          
       {
         "name": "Wisielec",
         "title": "Wisielec",

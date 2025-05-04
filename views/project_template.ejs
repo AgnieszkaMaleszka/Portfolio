@@ -37,6 +37,12 @@
                         <i class="fa-brands fa-github"></i>
                     </a>    
                 <% } %>   
+                <% if (typeof project.PDF !== 'undefined' && project.PDF) { %>
+                    <h2>Pobierz sprawozdanie z projektu:</h2>
+                    <a href="<%= project.PDF %>" class="githubBtn" download>
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </a>
+                <% } %>                
                 <% if (project.video) { %>
                     <h2>Wideo pokazujące działanie projektu</h2>
                     <iframe width="560" height="315"
