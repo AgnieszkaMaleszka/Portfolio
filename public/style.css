@@ -478,14 +478,14 @@ nav .fas{
 }
 
 /*--------------mniejszy ekran -------------*/
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 900px){
     /* zmiana zdjęcia w tle */
     #header{
         background-image: url(photos/background2.jpg); 
     }
     /*nagłówek - pisany tekst */ 
     .header-text{
-        margin-top: -7%;
+        margin-top: 0;
         padding: 10px 0;
         margin-bottom: 100%;
         font-size: 20px;

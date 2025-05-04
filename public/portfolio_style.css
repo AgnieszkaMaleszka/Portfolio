@@ -226,7 +226,7 @@ select:focus {
     box-shadow: 0 0 5px rgba(108, 160, 220, 0.5);
 }
 
-@media only screen and (max-width: 600px){
+@media only screen and (max-width: 900px){
     /*FILTR*/
     #technologyForm {
         display: flex;
