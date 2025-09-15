@@ -7,6 +7,7 @@
         <title>Portfolio</title>
         <link rel="stylesheet" href = "style.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+        
     </head>
     <body>
         <div id = "header">
@@ -15,18 +16,18 @@
                     <img src = "photos/logoA.png" class = "logo">
                     <ul id = "sidemenu">
                         <li><a href = "#header">Home</a></li>
-                        <li><a href = "#about">About</a></li>
+                        <li><a href = "#about">O mnie</a></li>
+                        <li><a href = "#current-projects">Aktualne projekty</a></li>
                         <li><a href = "#portfolio">Portfolio</a></li>
-                        <li><a href = "#contact">Contact</a></li>
+                        <li><a href = "#contact">Kontakt</a></li>
                         <i class="fas fa-times" onclick="closemenu()"></i>
                     </ul>
                     <i class="fa-solid fa-bars" onclick="openmenu()"></i>
-                    <i class="fa-solid fa-user"></i>
                 </nav>
             </div>
             <div class="header-text">
-                <p>Studentka trzeciego roku informatyki</p>
-                <h1>Hej, nazywam się <br><span class="auto-type"></span></h1>
+                <p>Studentka trzeciego <br> roku informatyki</p>
+                <h1>Hej, jestem <br><span class="auto-type"></span></h1>
             </div>
         </div>
         <!-----------------o mnie ---------------------->
@@ -39,36 +40,34 @@
                     <div class="about-col-2">
                         <h1 class="sub-title">Poznajmy się</h1>
                         <p>
-                            Cześć! Nazywam się Agnieszka Maleszka i jestem studentką Informatyki na Politechnice Poznańskiej. Od zawsze pasjonowało mnie programowanie i nowe technologie, dlatego aktywnie rozwijam swoje umiejętności w tym kierunku.
+                            Cześć! Nazywam się Agnieszka Maleszka i studiuję Informatykę na Politechnice Poznańskiej. Pasjonuję się programowaniem i nowymi technologiami — szczególnie tworzeniem stron internetowych (HTML, CSS, Node.js), aplikacji mobilnych w Kotlinie oraz tematyką sztucznej inteligencji i przetwarzania języka naturalnego.
 
-                            Obecnie skupiam się na nauce i doskonaleniu technologii webowych, takich jak HTML, CSS oraz Node.js. Jednocześnie rozwijam swoją wiedzę w obszarze przetwarzania języka naturalnego (NLP) oraz sieci neuronowych, poznając nowoczesne metody uczenia maszynowego i sztucznej inteligencji.
-                            
-                            Lubię budować aplikacje mobilne w Kotlinie, eksplorując możliwości tworzenia nowoczesnych i intuicyjnych rozwiązań. Mam również doświadczenie w pracy z C++ i frameworkiem Qt, gdzie tworzyłam aplikacje desktopowe.          
+                            Po godzinach uwielbiam dystopijne seriale, koty i pieczenie ciast. Łączę techniczną wiedzę z kreatywnością, nieustannie szukając nowych wyzwań. 
                         </p>
                         <div class="titles">
-                            <p class="links active-link" onclick="opentab('skills')">Skills</p>
-                            <p class="links" onclick="opentab('experience')">Experience</p>
-                            <p class="links" onclick="opentab('education')">Education</p>
+                            <p class="links active-link" onclick="opentab('skills')">Umiejętności</p>
+                            <p class="links" onclick="opentab('education')">Wykształcenie</p>
+                            <p class="links" onclick="opentab('experience')">Doświadczenie</p>
                         </div>
                         <div class="contents active-tab" id = "skills">
                             <ul>
-                                <li><span>Web Development</span><br>Tworzenie stron i aplikacji internetowych (HTML, CSS, Node.js)</li>
-                                <li><span>Mobile Development</span><br>Budowanie aplikacji mobilnych w Kotlinie</li>
-                                <li><span>Artificial Intelligence</span><br>Przetwarzanie języka naturalnego (NLP) i sieci neuronowe</li>
-                                <li><span>Desktop Development</span><br>Tworzenie aplikacji desktopowych w C++ z wykorzystaniem Qt</li>
-                                <li><span>UI/UX Design</span><br>Projektowanie interfejsów użytkownika dla stron i aplikacji</li>
-                                <li><span>Network Programming</span><br>Tworzenie aplikacji webowych z użyciem socketów</li>
+                                <li><span>Tworzenie stron internetowych</span><br>Projektowanie i tworzenie stron oraz aplikacji internetowych (HTML, CSS, Node.js, JavaScript)</li>
+                                <li><span>Tworzenie aplikacji mobilnych</span><br>Budowanie aplikacji mobilnych w Kotlinie</li>
+                                <li><span>Sztuczna inteligencja</span><br>Przetwarzanie języka naturalnego (NLP), systemy regułowe i wykorzystanie sieci neuronowych</li>
+                                <li><span>Programowanie sieciowe</span><br>Tworzenie aplikacji sieciowych z wykorzystaniem BSD Sockets w C++</li>
+                                <li><span>Cukiernictwo</span><br>Pieczenie najlepszego ciasta marchewkowego.</li>
                             </ul>                                                        
                         </div>
                         <div class="contents" id = "experience">
                             <ul>
                                 <li><span>2023 i 2024</span><br>Udzielanie korepetycji z matematyki, przygotowanie uczniów do matury.</li>
+                                <li><span>lipiec 2025</span><br>Praktyki — Sieć Badawcza Łukasiewicz (NLP/RAG): ewaluacja retrievera (Recall/Coverage/Faithfulness/Completeness/Citation Accuracy), Elasticsearch, tuning i wdrożenie rerankera (cross-encoder → margin ranking loss) do RAG, MLflow, eksperymenty z „early retrieverem”.</li>
                             </ul>
                         </div>
                         <div class="contents" id = "education">
                             <ul>
-                                <li><span>2022-teraz</span><br>Politechnika Poznańska Informatyka</li>
-                                <li><span>2019-2022</span><br>II Liceum Ogólnokształcące im. Krzysztofa Kamila Baczyńskiego - profil matematyczno fizyczno informatyczny</li>
+                                <li><span>2022-teraz</span><br>Politechnika Poznańska - Informatyka</li>
+                                <li><span>2019-2022</span><br>II Liceum Ogólnokształcące im. Krzysztofa Kamila Baczyńskiego - profil matematyczno-fizyczno-informatyczny</li>
                             </ul>
                         </div>
                     </div>
@@ -81,38 +80,13 @@
                 <h1 class="sub-title">Aktualnie rozwijane projekty</h1>
                 <div class="current-project-list">
                     <div class="current-project">
-                        <img src="photos/MainProjects/drink_app_logo.jpg" alt="Projekt 1">
+                        <img src="photos/MainProjects/SmartCooking.png" alt="Projekt 1">
                         <div class="layer">
-                            <h3>AI Bartender</h3>
+                            <h3>Smart Cooking</h3>
                             <p>
-                                Mobilna aplikacja pełniąca rolę wirtualnego barmana. Użytkownik podaje listę dostępnych składników, a aplikacja, korzystając z zapytań do modelu AI Gemini, proponuje możliwe drinki do przygotowania. (Kotlin)
-                            </p>
-                            <a href="/project/project1">
-                                <i class="fa-solid fa-up-right-from-square"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="current-project">
-                        <img src="photos/MainProjects/logo.png" alt="Projekt 2">
-                        <div class="layer">
-                            <h3>Restaurant Adviser </h3>
-                            <p>
-                                Mobilna aplikacja pomagająca w wyborze restauracji na podstawie lokalizacji użytkownika. 
-                                Dzięki integracji z API Google Maps umożliwia szybkie i intuicyjne wyszukiwanie najlepszych lokali w okolicy. 
-                                Aplikacja wspiera logowanie przez Facebooka, korzysta z zewnętrznej bazy danych do przechowywania informacji o użytkownikach oraz wykorzystuje czujniki urządzenia mobilnego. (Kotlin)                            </p>
-                            <a href="/project/project2">
-                                <i class="fa-solid fa-up-right-from-square"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="current-project">
-                        <img src="photos/MainProjects/sudoku.png" alt="Projekt 3">
-                        <div class="layer">
-                            <h3>Sudoku solver</h3>
-                            <p>
-                                Program do rozwiązywania Sudoku, wykorzystujący zarówno podejście sekwencyjne, jak i równoległe przy użyciu OpenMP oraz CUDA. Zawiera także generator losowych plansz Sudoku. (Python, C++, OpenMP, CUDA)
-                            </p>
-                            <a href="/project/project3">
+                                Smart-Cooking to przeglądarkowa aplikacja w Vue.js, która łączy gazetki promocyjne z listą zakupów. (Vue.js, Leaflet, Spring Boot, Java)
+                            </p>        
+                            <a href="/project/SmartCooking">
                                 <i class="fa-solid fa-up-right-from-square"></i>
                             </a>
                         </div>
@@ -127,6 +101,20 @@
                 <h1 class ="sub-title">My projects</h1>
                 <div class="work-list">
                     <div class="work">
+                    <img src="photos/MainProjects/drink_app_logo.jpg" alt="BarMate — aplikacja koktajlowa">
+                    <div class="layer">
+                        <h3>BarMate — aplikacja barmańska</h3>
+                        <p>
+                        Aplikacja w Jetpack Compose proponująca drinki na bazie składników — przepisy generuje Google Gemini (tryb kreatywny/dokładny).
+                        Wersje telefon/tablet, Material 3 (light/dark), ulubione, filtry i wyszukiwarka, kategorie, timer z animowanym pierścieniem,
+                        sygnały dźwiękowe i animacje; FAB tworzy gotowego SMS-a z listą zakupów.
+                        </p>
+                        <a href="/project/BarMate" aria-label="Zobacz projekt BarMate">
+                        <i class="fa-solid fa-up-right-from-square"></i>
+                        </a>
+                    </div>
+                    </div>
+                    <div class="work">
                         <img src="photos/MainProjects/1_Wisielec1.png" alt="Wisielec">
                         <div class="layer">
                             <h3>Gra sieciowa w wisielca</h3>
@@ -139,31 +127,19 @@
                         </div>
                     </div>
                     <div class="work">
-                        <img src="photos/Szachy/szachy_4.png">
+                        <img src="photos/MainProjects/sudoku.png" alt="Projekt 3">
                         <div class="layer">
-                            <h3>Szachy</h3>
+                            <h3>Sudoku solver</h3>
                             <p>
-                                Gra w szachy dla dwóch graczy. Z możliwością zapisania stanu planszy do pliku. (C++, SFML)
+                                Program do rozwiązywania i generowania Sudoku z implementacją sekwencyjną, OpenMP i CUDA. (Python, C++, CUDA, OpenMP).                        
                             </p>
-                            <a href="/project/Szachy">
-                                <i class="fa-solid fa-up-right-from-square"></i>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="work">
-                        <img src="photos/akwarium/rybki1.png">
-                        <div class="layer">
-                            <h3>Animacja 3D akwarium</h3>
-                            <p>
-                                Animacja 3D akwaium symulująca pływanie ryb. Za pomocą strzałek oraz myszki można poruszać się po całej scenie. (C++, Assimp, OpenGL)
-                            </p>
-                            <a href="/project/akwarium">
+                            <a href="/project/SudokuSolver">
                                 <i class="fa-solid fa-up-right-from-square"></i>
                             </a>
                             </p>
                         </div>
                     </div>
-                    <a href="/Portfolio" class="btn">See more</a>
+                    <a href="/Portfolio" class="btn">Zobacz więcej moich projektów!</a>
                 </div>
         </div>
         </div>
@@ -172,22 +148,25 @@
             <div class="container">
                 <div class="row">
                     <div class="contact-left">
-                        <h1 class="sub-title"> Contact Me</h1>
-                        <p id ="email"> <i class="fa-solid fa-paper-plane"></i>agnieszka.maleszka03@gmail.com</p>
-                        <p id = "phone"><i class="fa-solid fa-phone"></i>530313989</p>
+                        <h1 class="sub-title"> Zostaw kontakt do siebie!</h1>
+                        <p id="email">
+                            <i class="fa-solid fa-paper-plane"></i>
+                            <span id="email-text"></span>
+                          </p>
+                          
                         <div class="social-icons">
                             <a href="https://www.facebook.com/agnieszka.maleszka.7/"><i class="fa-brands fa-facebook"></i></a>
                             <a href="https://pl.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
                             <a href="https://github.com/AgnieszkaMaleszka"><i class="fa-brands fa-github"></i></a>
                         </div>
-                        <a href="images/my-cv.pdf" download class="btn btn2">Download CV</a>
+                        <a href="photos/Agnieszka-Maleszka-CV.pdf" download class="btn btn2">Pobierz CV</a>
                     </div>
                     <div class="contact-right">
                         <form name="submit-to-google-sheet">
-                            <input type="Text" name = "Name" placeholder="Your Name" required>
-                            <input type="Email" name = "Email" placeholder="Your Email" required>
-                            <textarea name="Message" rows = "6" placeholder="Your Message"></textarea>
-                            <button type = "submit" class="btn btn2">Submit</button>
+                            <input type="Text" name = "Name" placeholder="Imię" required>
+                            <input type="Email" name = "Email" placeholder="Email" required>
+                            <textarea name="Message" rows = "6" placeholder="Wiadomość"></textarea>
+                            <button type = "submit" class="btn btn2">Wyślij</button>
                         </form>
                     </div>
                     <span id = "msg"></span>
@@ -200,9 +179,10 @@
                     <h2>Agnieszka Maleszka</h2>
                     <ul class="footer-links">
                         <li><a href="#header">Header</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#portfolio">My Projects</a></li>
-                        <li><a href="#contact">Contact Me</a></li>
+                        <li><a href="#about">O mnie</a></li>
+                        <li><a href="#current-projects">Aktualnie rozwijane projekty</a></li>
+                        <li><a href="#portfolio">Moje projekty</a></li>
+                        <li><a href="#contact">Kontakt</a></li>
                     </ul>
                     <div class="social-icons">
                         <a href="https://www.facebook.com/agnieszka.maleszka.7/"><i class="fa-brands fa-facebook"></i></a>
@@ -281,5 +261,14 @@
             function closemenu(){
                 sidemenu.style.right = "-200px";
             }
+        </script>
+        <script>
+            // E-mail
+            const emailUser = "agnieszka.maleszka03";
+            const emailDomain = "gmail.com";
+            const email = `${emailUser}@${emailDomain}`;
+            document.getElementById("email-text").innerHTML = `<a href="mailto:${email}">${email}</a>`;
+
+            document.getElementById("phone-text").innerHTML = `<a href="tel:${phone}">${phone}</a>`;
         </script>
 </html>

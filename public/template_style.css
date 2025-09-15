@@ -5,10 +5,17 @@
     box-sizing: border-box;
 }
 html, body {
+    height: 100%;
     margin: 0;
     padding: 0;
-    height: 100%; 
+}body {
+    background-color: #363636;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
+
 
 body {
     background-color: #363636;
@@ -254,11 +261,11 @@ footer .social-icons a:hover {
     padding-top: 10px;
 }
 
-@media (max-width: 768px) {
+@media only screen and (max-width: 900px){
     body {
         display: flex;
         flex-direction: column;
-        min-height: 100vh; /* Cała wysokość ekranu */
+        min-height: 100vh; 
         margin: 0;
     }
 
@@ -269,6 +276,12 @@ footer .social-icons a:hover {
         min-height: auto;
         margin-bottom: 20px;
     }
+    .row {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+    }
+
 }
 
 

@@ -37,13 +37,21 @@
                         <i class="fa-brands fa-github"></i>
                     </a>    
                 <% } %>   
+                <% if (typeof project.PDF !== 'undefined' && project.PDF) { %>
+                    <h2>Pobierz sprawozdanie z projektu</h2>
+                    <a href="<%= project.PDF %>" class="githubBtn" download>
+                        <i class="fa-solid fa-file-pdf"></i>
+                    </a>
+                <% } %>                
                 <% if (project.video) { %>
                     <h2>Wideo pokazujące działanie projektu</h2>
-                    <video controls>
-                        <source src="<%= project.video %>" type="video/mp4">
-                        Twoja przeglądarka nie obsługuje tagu wideo.
-                    </video>
-                <% } %>           
+                    <iframe width="560" height="315"
+                        src="https://www.youtube.com/embed/<%= project.video %>"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+                <% } %>                          
             </section>
         </div>
 
@@ -83,12 +91,6 @@
         <div class="footer-container">
             <div class="footer-left">
                 <h2>Agnieszka Maleszka</h2>
-                <ul class="footer-links">
-                    <li><a href="#header">Header</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">My Projects</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
-                </ul>
                 <div class="social-icons">
                     <a href="https://www.facebook.com/agnieszka.maleszka.7/"><i class="fa-brands fa-facebook"></i></a>
                     <a href="https://pl.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>

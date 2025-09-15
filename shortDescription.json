@@ -1,6 +1,43 @@
 {
     "projects": [
       {
+        "name": "SmartCooking",
+        "title": "Smart Cooking", 
+        "description": "Webowa aplikacja w Vue.js, która integruje przepisy i listy zakupów z aktualnymi promocjami pobieranymi z Promotion-API.",
+        "technology": ["vue.js", "java", "spring", "leaflet", "API"],
+        "image" : "/photos/MainProjects/1_SmartCooking.jpg",
+        "subpage": "/project/SmartCooking"
+      }, 
+      {
+        "name": "BarMate",
+        "title": "BarMate",
+        "description": "Wirtualny barman w Twoim telefonie. (Kotlin, Gemini, Android)",
+        "technology": ["Kotlin", "AI Gemini", "Android"],
+        "image": "/photos/MainProjects/drink_app_log.png",
+        "subpage": "/project/BarMate"
+      }, 
+      {
+        "name": "RestaurantAdviser",
+        "title": "Restaurant Advise",
+        "description": "Mobilna aplikacja pomagająca wybrać restaurację.  (Kotlin, Google Maps API, ABSA, NLP Android)",
+        "technology": ["Kotlin", "Google Maps API", "Android", "NLP", "ABSA"],
+        "image": "/photos/MainProjects/logo2.png",
+        "subpage": "/project/RestaurantAdviser"
+      },         
+      {
+        "name": "Sudoku solver",
+        "title": "Sudoku solver",
+        "description": "Równoległy solver sudoku. (C++,OpenMp, Python, Cuda)",
+        "technology": [
+          "C++",
+          "Cuda", 
+          "OpenMp",
+          "Python"
+        ],
+        "image": "/photos/MainProjects/sudoku2.png",
+        "subpage": "/project/SudokuSolver"
+      }, 
+      {
         "name": "Wisielec",
         "title": "Gra sieciowa w wisielca",
         "description": "Gra sieciowa, w której gracze odgadują hasła, zdobywając punkty i premie za szybkość. (C++, BSD socket API, QT)" ,
@@ -25,14 +62,6 @@
         "subpage": "/project/Akwarium"
       },
       {
-        "name": "Gimp",
-        "title": "Projekty graficzne",
-        "description": "Plakaty i dyplomy zaprojektowane na szkolny turniej układania kostki Rubika.",
-        "technology": ["Gimp"],
-        "image": "/photos/MainProjects/6_PlakatKostka.jpg",
-        "subpage": "/project/Gimp"
-      },
-      {
         "name": "Robot",
         "title": "Robot omijający przeszkody",
         "description": "Robot wykrywający i omijający przeszkody. Samodzielnie wytrawiona płytka PCB. (Arduino IDE)" ,
@@ -49,15 +78,8 @@
         "subpage": "/project/Pong"
       },
       {
-        "name": "SkryptyBash",
-        "title": "Skrypty (bash)",
-        "technology": ["Bash"],
-        "image": "/photos/MainProjects/8_code2.jpg",
-        "subpage": "/project/SkryptyBash"
-      }, 
-      {
         "name": "PDDL",
-        "title": "Skrypty (bash)",
+        "title": "Doradca prezentowy (bash)",
         "description": "Projekt regułowy systemu eksperckiego polegający na wyborze prezentu. (CLIPS, Python)",
         "technology": ["CLIPS", "Python"],
         "image": "/photos/MainProjects/4_App.jpg",
@@ -73,6 +95,31 @@
         ],
         "image": "/photos/MainProjects/9_plan.jpg",
         "subpage": "/project/Harmonogram"
+      }, 
+      {
+        "name": "Gimp",
+        "title": "Projekty graficzne",
+        "description": "Plakaty i dyplomy zaprojektowane na szkolny turniej układania kostki Rubika.",
+        "technology": ["Gimp"],
+        "image": "/photos/MainProjects/6_PlakatKostka.jpg",
+        "subpage": "/project/Gimp"
+      },
+      {
+        "name": "SkryptyBash",
+        "title": "Skrypty (bash)",
+        "technology": ["Bash"],
+        "image": "/photos/MainProjects/8_code2.jpg",
+        "subpage": "/project/SkryptyBash"
+      }, 
+      {
+        "name": "Cukiernictwo",
+        "title": "Cukiernictwo",
+        "technology": [
+          "piekarnik"
+        ],
+        "description": "W wolnym czasie bardzo lubię piec. Rodzina twierdzi że całkiem mi to wychodzi :).",
+        "image": "/photos/MainProjects/ciasto.png",
+        "subpage": "/project/Cukiernictwo"
       }
     ]
 }

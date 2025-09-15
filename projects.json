@@ -1,23 +1,83 @@
 {
   "projects": [
     {
-      "name": "Wisielec",
-      "title": "Wisielec",
-      "description": "Gra sieciowa, w której gracze odgadują hasła w systemie turowym. Dołączają do wspólnego pokoju, zdobywają punkty za poprawne litery, a najszybsi otrzymują premię. Nowi gracze mogą dołączać w trakcie rozgrywki, ale gra rozpoczyna się przy co najmniej dwóch osobach. Każda tura ma limit czasu, a kategoria hasła jest podana na początku." ,
-      "technology": ["Program serwera - C++",
-                      "Obsługa sieci - BSD socket API", 
-                      "Kod klienta - QT"],
-      "image": "/photos/Wisielec",
-      "link": "https://github.com/dataproctech/pierwszy-projekt-AgnieszkaMaleszka"
+      "name": "BarMate",
+      "title": "BarMate",
+      "description": "Miała być zwykła wyszukiwarka drinków, a wyszedł BarMate — AI barman. Podajesz, co masz, dostajesz konkretny przepis, krok po kroku z timerem. Ulubione, filtry, Material 3. Trochę polskiej studenckiej improwizacji — tylko odpowiedzialnie. Aplikacja pozwala wybrać składniki (plus jeden „sekretny” dodatek) oraz ustawić czas przygotowania, poziom trudności i tryb: alkoholowy lub bezalkoholowy. Przełączenie na tryb bezalkoholowy podmienia propozycje na wersje bez procentów, a BarMate (Gemini) dobiera proporcje i prowadzi przez przygotowanie z animowanym stoperem. Jest szybka wyszukiwarka, kategorie i zapisywanie ulubionych, a listę zakupów wyślesz jednym tapnięciem SMS-em. Całość w czystym Material 3 (jasny/ciemny), dopracowana na telefon i tablet, z płynną nawigacją.",
+      "technology": [
+        "Kotlin — Jetpack Compose (Material 3, animacje, układ telefon/tablet)",
+        "Gemini API — generowanie propozycji drinków na podstawie składników",
+        "Android — intencje SMS (lista zakupów) i udostępnianie",
+        "Coroutines/Flow — asynchroniczność i zarządzanie stanem",
+        "Navigation Compose — wieloekranowy przepływ"
+      ],
+      "image": "/photos/BarMate", 
+      "link": "https://github.com/AgnieszkaMaleszka/BarMate",
+      "video": "XTNWrPeGN34"
+
     },
-    {
-      "name": "Szachy",
-      "title": "Szachy",
-      "description": "Gra umożliwiająca rozgrywkę w szachy dla dwóch graczy. Obsługuje ruchy zgodne z zasadami FIDE, wykrywa szach, mat i pat. Posiada interfejs umożliwiający intuicyjne poruszanie figurami oraz analizę pozycji.",
-      "technology":["Kod programu - C++",
-                    "Interfejs użytkownika - SFML "],
-      "image": "/photos/Szachy"
-    }, 
+      {
+        "name": "RestaurantAdviser",
+        "title": "Restaurant Adviser",
+        "description": "Restaurant Adviser łączy prosty wybór (turniej 8/16/32 i Shake-o-mat po potrząśnięciu) z solidnym zapleczem: Google Places/Maps do danych, Firebase Auth + Firestore/Storage do kont, ulubionych, komentarzy i zdjęć. Najciekawsze: moduł ABSA zbudowałam sama — to mikroserwis (FastAPI) z modelem Transformers (BERT/RoBERTa) trenowanym na anglojęzycznych zbiorach SemEval/ABSA16. Dla polskich opinii stosuję pipeline PL→EN, model ocenia ton i aspekt (np. jedzenie, obsługa, ceny), a wynik wraca do aplikacji i pomaga w wyborze lokalu. UI: Kotlin/Jetpack Compose (Material 3).",
+        "technology": [
+          "Kotlin — Jetpack Compose (Material 3, animacje)",
+          "Google Maps SDK for Android",
+          "Google Places API",
+          "Firebase Authentication (Google, Facebook, e-mail/hasło)",
+          "Firebase Firestore (ulubione, komentarze, polubienia)",
+          "Retrofit + Gson (obsługa API)",
+          "Własne API ABSA (Hugging Face Transformers — aspekt + sentyment)",
+          "Akcelerometr — tryb Shake-o-mat"
+        ],
+        "image": "/photos/RestaurantAdviser",
+        "link": "https://github.com/AgnieszkaMaleszka/RestaurantAdviser_2"
+      },
+      {
+        "name": "SmartCooking",
+        "title": "Smart Cooking",
+        "description": "Smart-Cooking to przeglądarkowa aplikacja w Vue.js, która łączy gazetki promocyjne z listą zakupów. Pobiera sklepy i gazetki z własnego Promotion-API, pozwala przeglądać strony gazetek, wycinać fragmenty i jednym kliknięciem dodać produkty do listy. Lista wspiera statusy kupione/niekupione, a dzięki mapom (Leaflet) wyznaczysz najkrótszą trasę do sklepu. Projekt edukacyjny — lekki i praktyczny.",
+        "technology": [
+          "Vue.js — SPA (frontend web)",
+          "Leaflet — mapa i najkrótsza trasa",
+          "Promotion-API (Spring Boot) — pobieranie gazetek",
+          "Axios/fetch — komunikacja z backendem",
+          "SPA routing / komponenty — architektura UI"
+        ],
+        "image": "/photos/SmartCooking",
+        "link": "https://github.com/AgnieszkaMaleszka/Smart-cooking"
+      },
+      {
+        "name": "SudokuSolver",
+        "title": "Sudoku Solver",
+        "description": "Projekt Sudoku Solver to rozwiązywacz Sudoku modelujący łamigłówkę jako problem kolorowania grafu. Pomysł wziął się od mojego taty — fana Sudoku — który zaraził mnie tą łamigłówką. Zaimplementowałam trzy warianty: sekwencyjny w C++, równoległy z OpenMP oraz GPU z CUDA (1 blok = 1 plansza), co pozwoliło rzetelnie porównać skalowanie i czasy działania. Rdzeniem jest heurystyczny algorytm genetyczny (inicjalizacja populacji, selekcja, krzyżowanie, mutacja), przy czym w wersji CUDA najkosztowniejszą mutację przeniosłam na GPU, a funkcja fitness zlicza konflikty w grafie. Dodatkowo przygotowałam generator plansz z kontrolą liczby pustych pól i gwarancją jednoznaczności rozwiązania (TXT) oraz lekkie GUI w Pythonie do wizualizacji wejścia/wyjścia i porównań. Testy automatyczne (config.json) mierzą czasy dla SEQ/OMP/CUDA i zapisują wyniki — dla 9×9 najszybszy bywa OpenMP, a CUDA zyskuje przewagę przy większych planszach (16×16, 25×25).",
+        "technology": [
+          "C++ – implementacja wersji sekwencyjnej",
+          "CUDA & OpenMP – przyspieszenie działania przez równoleglenie obliczeń",
+          "Python (Tkinter) – graficzny interfejs użytkownika"
+        ],
+        "image": "/photos/SudokuSolver",
+        "link": "https://github.com/AgnieszkaMaleszka/Sudoku-solver",
+        "PDF": "/photos/sudoku.pdf"
+      },          
+      {
+        "name": "Wisielec",
+        "title": "Wisielec",
+        "description": "Gra sieciowa, w której gracze odgadują hasła w systemie turowym. Dołączają do wspólnego pokoju, zdobywają punkty za poprawne litery, a najszybsi otrzymują premię. Nowi gracze mogą dołączać w trakcie rozgrywki, ale gra rozpoczyna się przy co najmniej dwóch osobach. Każda tura ma limit czasu, a kategoria hasła jest podana na początku." ,
+        "technology": ["Program serwera - C++",
+                        "Obsługa sieci - BSD socket API", 
+                        "Kod klienta - QT"],
+        "image": "/photos/Wisielec",
+        "link": "https://github.com/AgnieszkaMaleszka/Wisielec"
+      },
+      {
+        "name": "Szachy",
+        "title": "Szachy",
+        "description": "Gra umożliwiająca rozgrywkę w szachy dla dwóch graczy. Obsługuje ruchy zgodne z zasadami FIDE, wykrywa szach, mat i pat. Posiada interfejs umożliwiający intuicyjne poruszanie figurami oraz analizę pozycji.",
+        "technology":["Kod programu - C++",
+                      "Interfejs użytkownika - SFML "],
+        "image": "/photos/Szachy"
+      }, 
         {
           "name": "Akwarium",
           "title": "Akwarium",
@@ -27,7 +87,7 @@
             "Wczytywanie modeli z Blender - Assimp"
           ],
           "image": "/photos/Akwarium",
-          "video": "/photos/wideo/Akwarium.mp4"
+          "video": "pXaO3P97Lu4"
         },
         {
           "name": "Gimp",
@@ -48,7 +108,7 @@
             "Mikroprocesor - Atmega328P"
           ],
           "image": "/photos/Robot ASK",
-          "video": "/photos/wideo/robot2.mp4"
+          "video": "XzO_iJRgABQ"
         }, 
         {
           "name": "Pong",
@@ -60,8 +120,9 @@
               "Logika gry - Python"
           ],
           "image": "/photos/Pong",
-          "video": "/photos/wideo/z7_155941.mp4"
-        }, 
+          "link": "https://github.com/AgnieszkaMaleszka/Arduino-Pong",
+          "video": "9t2A97gM4uw"
+        },
         {
           "name": "SkryptyBash",
           "title": "Skrypty w bashu",
@@ -79,6 +140,7 @@
              "System regułowy - CLIPS",
              "Interfejs użytkownika - Python"
           ],
+          "link": "https://github.com/AgnieszkaMaleszka/Gift-guide",
           "image": "/photos/PDDL"
         },
         {
@@ -90,6 +152,47 @@
             "Generowanie graficznych planów zajęć - Python"
           ],
           "image": "/photos/Harmonogram"
+        },
+                {
+          "name": "SkryptyBash",
+          "title": "Skrypty w bashu",
+          "description": "Pisałam proste skrypty w Bashu, takie jak skrypt do generowania miniatur obrazów o określonym rozmiarze, które następnie były umieszczane w odpowiednich podkatalogach, oraz skrypt przypominający o nadchodzących wydarzeniach.",
+          "technology": [
+              "bash"
+          ],
+          "image": "/photos/SkryptyBash"
+        },
+        {
+          "name": "PDDL",
+          "title": "System regułowy",
+          "description": "System regułowy wspierający wybór prezentu, wykorzystujący CLIPS jako silnik regułowy oraz Pythona jako interfejs użytkownika i narzędzie do integracji.",
+          "technology": [
+             "System regułowy - CLIPS",
+             "Interfejs użytkownika - Python"
+          ],
+          "link": "https://github.com/AgnieszkaMaleszka/Gift-guide",
+          "image": "/photos/PDDL"
+        },
+        {
+          "name": "Harmonogram",
+          "title": "Układanie Planu Zajęć w Kontekście Algorytmów Kolorowania Grafu",
+          "description": "Na zajęciach z optymalizacji kombinatorycznej implementowałam algorytmy kolorowania grafów do tworzenia harmonogramu zajęć, np. planu lekcji. Proces obejmował: \nPrzekształcenie programu nauczania w graf, przedstawiający zajęcia, nauczycieli, klasy, przedmioty i godziny.\nKolorowanie grafu w celu stworzenia logicznych bloków czasowych, eliminujących konflikty.\nPrzekształcenie pokolorowanego grafu w plan lekcji, przydzielając zajęcia, nauczycieli, klasy i przedmioty do określonych godzin. Zaimplementowałam dwie metody kolorowania: zachłanną i genetyczną",
+          "technology": [
+            "Logika programu - C++",
+            "Generowanie graficznych planów zajęć - Python"
+          ],
+          "image": "/photos/Harmonogram"
+        }, 
+        {
+          "name": "Cukiernictwo",
+          "title": "Cukiernictwo",
+          "description": "W wolnym czasie bardzo lubię piec. Rodzina twierdzi że całkiem mi to wychodzi :).",
+          "technology": [
+            "Piekarnik",
+            "Cukier"
+          ],
+          "image": "/photos/Wypieki",
+          "subpage": "/project/Cukiernictwo"
         }
   ]
 }

@@ -31,7 +31,7 @@
     <div class="gallery">
         <% projects.forEach(project => { %>
             <div class="galleryItem">
-                <% console.log(project.image); %> <!-- Sprawdzenie wygenerowanej ścieżki obrazu -->
+                <% console.log(project.image); %> 
                 <% if (project.image) { %>
                     <img src="<%= project.image %>" alt="Zdjęcie projektu" class="galleryImage">
                 <% } else { %>
@@ -52,12 +52,6 @@
         <div class="footer-container">
             <div class="footer-left">
                 <h2>Agnieszka Maleszka</h2>
-                <ul class="footer-links">
-                    <li><a href="#header">Header</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#portfolio">My Projects</a></li>
-                    <li><a href="#contact">Contact Me</a></li>
-                </ul>
                 <div class="social-icons">
                     <a href="https://www.facebook.com/agnieszka.maleszka.7/"><i class="fa-brands fa-facebook"></i></a>
                     <a href="https://pl.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>

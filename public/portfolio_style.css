@@ -32,6 +32,8 @@ h1 {
 }
 .filter{
     margin-left: 50px;
+    margin-right: 20px;
+    font-size: 20px;
 }
 .gallery {
     display: grid;
@@ -117,6 +119,7 @@ h1 {
 
 .resetBtn{
     background-color: #4c70c0;
+    margin-left: 20px;
     color: white;
     width: 60px;
     height: 60px;
@@ -142,9 +145,14 @@ h1 {
 #technologyForm {
     display: flex;
     align-items: center;
+    gap: 8px; /* lepszy odstęp między elementami */
+    flex-wrap: wrap; /* pozwala łamać wiersze na małych ekranach */
 }
+
 #technologyForm select {
-    margin-right: 5px; 
+    margin-right: 5px;
+    padding: 6px;
+    font-size: 1em;
 }
 
 /*-----stopka-----*/
@@ -196,5 +204,73 @@ footer .social-icons a:hover {
     padding-top: 10px;
 }
 
+select {
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    font-size: 16px;
+    color: #333;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+    background-size: 10px;
+    cursor: pointer;
+    min-width: 200px;
+}
+select:focus {
+    border-color: #6ca0dc;
+    outline: none;
+    box-shadow: 0 0 5px rgba(108, 160, 220, 0.5);
+}
 
+@media only screen and (max-width: 900px){
+    /*FILTR*/
+    #technologyForm {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: center;
+        margin: 40px auto; 
+        width: 100%;
+        max-width: 400px; 
+    }
+    #technologyForm select {
+        width: 70%;
+        margin-right: 0;
+        font-size: 1em;
+    }
+    
+    #resetFilterBtn {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 1em;
+        cursor: pointer;
+    }
+    
+    .gallery {
+        grid-template-columns: 1fr; /* 1 element w kolumnie */
+        justify-items: center;     /* wyśrodkuj elementy w siatce */
+    }
 
+    .galleryItem {
+        width: 100%;
+        max-width: 90%; /* kontroluj szerokość kart na mobilkach */
+    }
+
+    .layer {
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .layer a {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+        line-height: 50px;
+    }
+    
+    
+}
