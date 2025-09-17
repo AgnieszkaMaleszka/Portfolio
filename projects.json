@@ -16,7 +16,20 @@
       "video": "XTNWrPeGN34"
 
     },
-      {
+    {
+      "name": "AgentJobson",
+      "title": "Agent Jobson",
+      "description": "Agent Jobson to mój bot-rekruter działający 24/7 — zaprojektowany tak, by mieścić się w darmowych limitach. Śledzi portale pracuj.pl, justjoin.it i theprotocol.it, pobiera aktualne oferty wraz ze szczegółami, a dane zapisuje w bazie MySQL (normalizacja i deduplikacja po źródle/ID/dacie). Logika parsowania i dopasowania formatów (np. ekstrakcja/kanonikalizacja job_id, porządkowanie JSON/URL) jest napisana w JavaScripcie. Każde ogłoszenie jest łączone z moim profilem kandydata i wysyłane do LLM (Gemini API) wyłącznie wtedy, gdy jest unikalne i aktualne. Trafione pozycje wracają do mnie na Discordzie jako powiadomienia z linkiem i krótkim „dlaczego”. Workflow zbudowałam w n8n (harmonogramy, warunki, retry/backoff), co pozwala trzymać koszty na zerowym poziomie. Możliwe, że to właśnie jemu zawdzięczam Twoją wizytę ;).",
+      "technology": [
+        "n8n — projektowanie workflow (harmonogramy, warunki, retry/backoff)",
+        "MySQL — przechowywanie, normalizacja i deduplikacja ofert",
+        "Gemini API — ocena dopasowania oferty do profilu kandydata",
+        "JavaScript — parsowanie danych, kanonikalizacja linków, ekstrakcja job_id i reguły biznesowe",
+        "Discord API — powiadomienia o dopasowanych ofertach"
+      ],
+      "image": "/photos/AgentJobson"
+    },
+    {
         "name": "RestaurantAdviser",
         "title": "Restaurant Adviser",
         "description": "Restaurant Adviser łączy prosty wybór (turniej 8/16/32 i Shake-o-mat po potrząśnięciu) z solidnym zapleczem: Google Places/Maps do danych, Firebase Auth + Firestore/Storage do kont, ulubionych, komentarzy i zdjęć. Najciekawsze: moduł ABSA zbudowałam sama — to mikroserwis (FastAPI) z modelem Transformers (BERT/RoBERTa) trenowanym na anglojęzycznych zbiorach SemEval/ABSA16. Dla polskich opinii stosuję pipeline PL→EN, model ocenia ton i aspekt (np. jedzenie, obsługa, ceny), a wynik wraca do aplikacji i pomaga w wyborze lokalu. UI: Kotlin/Jetpack Compose (Material 3).",

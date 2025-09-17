@@ -11,10 +11,18 @@
       {
         "name": "BarMate",
         "title": "BarMate",
-        "description": "Wirtualny barman w Twoim telefonie. (Kotlin, Gemini, Android)",
+        "description": "Prywatny agent ofert pracy. (n8n, MySQL, Gemini, JavaScript, Discord)",
         "technology": ["Kotlin", "AI Gemini", "Android"],
         "image": "/photos/MainProjects/drink_app_log.png",
         "subpage": "/project/BarMate"
+      }, 
+      {
+        "name": "AgentJobson",
+        "title": "AgentJobson",
+        "description": "Wirtualny barman w Twoim telefonie. (Kotlin, Gemini, Android)",
+        "technology": ["n8n", "MySQL", "JavaScript", "AI Gemini", "Discord API"],
+        "image": "/photos/MainProjects/AgentJobson.jpg",
+        "subpage": "/project/AgentJobson"
       }, 
       {
         "name": "RestaurantAdviser",
