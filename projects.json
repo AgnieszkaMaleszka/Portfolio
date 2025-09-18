@@ -30,9 +30,9 @@
       "image": "/photos/AgentJobson"
     },
     {
-        "name": "RestaurantAdviser",
-        "title": "Restaurant Adviser",
-        "description": "Restaurant Adviser łączy prosty wybór (turniej 8/16/32 i Shake-o-mat po potrząśnięciu) z solidnym zapleczem: Google Places/Maps do danych, Firebase Auth + Firestore/Storage do kont, ulubionych, komentarzy i zdjęć. Najciekawsze: moduł ABSA zbudowałam sama — to mikroserwis (FastAPI) z modelem Transformers (BERT/RoBERTa) trenowanym na anglojęzycznych zbiorach SemEval/ABSA16. Dla polskich opinii stosuję pipeline PL→EN, model ocenia ton i aspekt (np. jedzenie, obsługa, ceny), a wynik wraca do aplikacji i pomaga w wyborze lokalu. UI: Kotlin/Jetpack Compose (Material 3).",
+        "name": "GdzieJemy",
+        "title": "GdzieJemy?",
+        "description": "GdzieJemy? łączy prosty wybór (turniej 8/16/32 i Shake-o-mat po potrząśnięciu) z solidnym zapleczem: Google Places/Maps do danych, Firebase Auth + Firestore/Storage do kont, ulubionych, komentarzy i zdjęć. Najciekawsze: moduł ABSA zbudowałam sama — to mikroserwis (FastAPI) z modelem Transformers (BERT/RoBERTa) trenowanym na anglojęzycznych zbiorach SemEval/ABSA16. Dla polskich opinii stosuję pipeline PL→EN, model ocenia ton i aspekt (np. jedzenie, obsługa, ceny), a wynik wraca do aplikacji i pomaga w wyborze lokalu. UI: Kotlin/Jetpack Compose (Material 3).",
         "technology": [
           "Kotlin — Jetpack Compose (Material 3, animacje)",
           "Google Maps SDK for Android",
@@ -43,8 +43,8 @@
           "Własne API ABSA (Hugging Face Transformers — aspekt + sentyment)",
           "Akcelerometr — tryb Shake-o-mat"
         ],
-        "image": "/photos/RestaurantAdviser",
-        "link": "https://github.com/AgnieszkaMaleszka/RestaurantAdviser_2"
+        "image": "/photos/GdzieJemy",
+        "link": "https://github.com/AgnieszkaMaleszka/GdzieJemy"
       },
       {
         "name": "SmartCooking",

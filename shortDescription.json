@@ -18,19 +18,19 @@
       }, 
       {
         "name": "AgentJobson",
-        "title": "AgentJobson",
+        "title": "Agent Jobson",
         "description": "Wirtualny barman w Twoim telefonie. (Kotlin, Gemini, Android)",
         "technology": ["n8n", "MySQL", "JavaScript", "AI Gemini", "Discord API"],
         "image": "/photos/MainProjects/AgentJobson.jpg",
         "subpage": "/project/AgentJobson"
       }, 
       {
-        "name": "RestaurantAdviser",
-        "title": "Restaurant Advise",
+        "name": "GdzieJemy",
+        "title": "GdzieJemy?",
         "description": "Mobilna aplikacja pomagająca wybrać restaurację.  (Kotlin, Google Maps API, ABSA, NLP Android)",
         "technology": ["Kotlin", "Google Maps API", "Android", "NLP", "ABSA"],
         "image": "/photos/MainProjects/logo2.png",
-        "subpage": "/project/RestaurantAdviser"
+        "subpage": "/project/GdzieJemy"
       },         
       {
         "name": "Sudoku solver",
